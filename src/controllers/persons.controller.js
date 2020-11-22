@@ -10,7 +10,7 @@ const pool = new Pool ({
 });
 
 const getPersons = async (req, res) => {
-    const response = await pool.query('SELECT * FROM person');    
+    const response = await pool.query('SELECT * FROM persons');    
     res.status(200).json(response.rows);
 }
 
