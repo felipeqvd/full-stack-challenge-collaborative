@@ -14,6 +14,14 @@ const getPersons = async (req, res) => {
     res.status(200).json(response.rows);
 }
 
+const createPerson = async (req, res) => {
+    const { fullname, birth } = req.body;
+    
+    const reponse = await pool.query('INSERT INTO persons (fullname, birth) VALUES ($1, $2)', [fullname, birth]);
+    res.send('Persona creada');
+}
+
 module.exports = {
-    getPersons
+    getPersons,
+    createPerson
 }
