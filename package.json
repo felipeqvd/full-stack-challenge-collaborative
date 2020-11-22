@@ -1,0 +1,27 @@
+{
+  "name": "collaborative",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipeqvd/full-stack-challenge-collaborative.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipeqvd/full-stack-challenge-collaborative/issues"
+  },
+  "homepage": "https://github.com/felipeqvd/full-stack-challenge-collaborative#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
